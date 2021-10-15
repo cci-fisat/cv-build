@@ -1,0 +1,110 @@
+body {
+  background: #35dc9b;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh ;
+}
+
+label {
+  position: relative;
+  display: block;
+}
+.input-group input{
+  font: 18px Helvetica, Arial, sans-serif;
+  display: block;
+  padding: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+span {
+  color: #35dc9b;
+  font: 13px Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"] {
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #1aaf75;
+  color: #fff;
+  padding: 16px 40px;
+  margin-top: 20px;
+}
+
+input[type="button"] {
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #1aaf75;
+  color: #fff;
+  padding: 16px 40px;
+  margin-top: 20px;
+}
+
+.title_style{
+  color: #fff;
+  font: 30px Helvetica;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 768px)
+{
+  .title{
+    margin-top: 5rem;
+    margin-left: 20px;
+  }
+  .btn-bottom-right {
+    background: #f09629 !important;
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+  .btn-bottom-left {
+    background: #f09629 !important;
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  .btn-bottom-right {
+    background: #f09629 !important;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+  }
+  .btn-bottom-left {
+    background: #f09629 !important;
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+  }
+}
+
+.icon-button {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 20px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 40%;
+  font-weight: bold;
+}
+
+/* Darker background on mouse-over */
+.icon-button:hover {
+  background-color: RoyalBlue;
+}
